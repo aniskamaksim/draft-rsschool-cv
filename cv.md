@@ -1,5 +1,7 @@
-# Maksim Aniska
+a# Maksim Aniska
 <img src = "https://avatars.githubusercontent.com/u/106627293?v=4" width = "240" height = "240" alt = "still young Maksim Aniska photo" />
+
+
 
 ## Some facts about me
 Born in 1982. I am 40 this year.
@@ -20,9 +22,19 @@ My goal is to move with my family from Belarus.
 
 ## Skills
 
+I am well organized, structured, disciplined and motivated. 
+
+I have good communication skills, I have a great desire to develop and learn new things.
+
+
+If I see a goal, I see no obstacles.
 
 ## Achievements
 not much actually
+
+**Certificate EF SET C1 Advanced**
+<img src = "https://ibeton.by/wp-content/uploads/EFSET_MaksimAniska.png" href = "https://www.efset.org/cert/reYjvv" width = "330" height = "330"></img>
+
 
 
 
