@@ -1,15 +1,39 @@
 # Maksim Aniska
+<img src = "https://avatars.githubusercontent.com/u/106627293?v=4" width = "240" height = "240" alt = "still young Maksim Aniska photo" />
 
-## CV
+## Some facts about me
+Born in 1982. I am 40 this year.
 
+1999 - 2002 Studied at the Belarusian State University at the Faculty of Journalism (did not graduate)
 
-![Alt-photo of still young Maksim Aniska](https://avatars.githubusercontent.com/u/106627293?v=4 "No photoshop was added")
+2002 - 2003 Served in the army.
+
+2006 - 2021 Worked and did business in the construction sector (concrete production) and in the field of cargo transportation.
+
+I started as a foreman of the plant site, then became a sales manager, head of the sales department, the last position was the deputy director of the company.
+
+I have my own business related to cargo transportation, which currently operates autonomously, without my participation.
+
+I am married and have a son, Matthew. This year he will be 2 years old.
+
+My goal is to move with my family from Belarus.
+
+## Skills
 
 
 ## Achievements
+not much actually
 
 
-## Contacts
 
 
-## Links
+## Contacts and links
+### Call\Viber\Telegram
+* <a href = "tel:+375296373666">+375 (29) 63 73 666 </a>*MTS* 
+* <a href = "tel:+375296313666">+375 (29) 63 13 666</a> *A1*
+### Email
+aniskamaksim@gmail.com
+### GitHub
+https://github.com/aniskamaksim
+### Codewars
+https://www.codewars.com/users/aniskamaksim
