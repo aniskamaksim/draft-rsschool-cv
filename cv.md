@@ -1,6 +1,5 @@
-a# Maksim Aniska
+# Maksim Aniska
 <img src = "https://avatars.githubusercontent.com/u/106627293?v=4" width = "240" height = "240" alt = "still young Maksim Aniska photo" />
-
 
 
 ## Some facts about me
@@ -30,13 +29,47 @@ I have good communication skills, I have a great desire to develop and learn new
 If I see a goal, I see no obstacles.
 
 ## Achievements
-not much actually
+
 
 **Certificate EF SET C1 Advanced**
-<img src = "https://ibeton.by/wp-content/uploads/EFSET_MaksimAniska.png" href = "https://www.efset.org/cert/reYjvv" width = "330" height = "330"></img>
 
 
+<img src = "https://ibeton.by/wp-content/uploads/EFSET_MaksimAniska.png" href = "https://www.efset.org/cert/reYjvv" width = "330" height = "330" float = "left"></img>
 
+
+**Stepik JavaScript courses Certificate**
+
+
+<img src = "https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.png?resolution=small" float = "left"></img>
+
+
+**Examples of my code**
+```
+function longest(s1, s2) {
+let x = s1.concat(s2).split('').sort();
+ let yArray = x.filter(function(item, pos) {
+    return x.indexOf(item) == pos;
+})
+  return yArray.join('');
+}
+```
+
+```
+'use strict';
+function testCycle(n) {
+  const resheto = [];
+  const num = [];
+    for (let i = 2; i < n; i++) {
+    if(!resheto[i]){
+    num.push(i);
+    for (let j = i * 2; j < n; j +=i) {
+    resheto[j] = true;
+    }
+    }
+    }
+    return num.join(" ");
+}
+```
 
 
 ## Contacts and links
@@ -49,3 +82,4 @@ aniskamaksim@gmail.com
 https://github.com/aniskamaksim
 ### Codewars
 https://www.codewars.com/users/aniskamaksim
+### Discorde
