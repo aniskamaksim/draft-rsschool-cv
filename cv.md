@@ -1,7 +1,6 @@
 # Maksim Aniska
 <img src = "https://avatars.githubusercontent.com/u/106627293?v=4" width = "240" height = "240" alt = "still young Maksim Aniska photo" />
 
-
 ## Some facts about me
 Born in 1982. I am 40 this year.
 
@@ -26,18 +25,16 @@ I am well organized, structured, disciplined and motivated.
 I have good communication skills, I have a great desire to develop and learn new things.
 
 
-If I see a goal, I see no obstacles.
-
 ## Achievements
 
 
-**Certificate EF SET C1 Advanced**
+<a href = "https://www.efset.org/cert/reYjvv">**Certificate EF SET C1 Advanced**</a>
 
 
 <img src = "https://ibeton.by/wp-content/uploads/EFSET_MaksimAniska.png" href = "https://www.efset.org/cert/reYjvv" width = "330" height = "330" float = "left"></img>
 
 
-**Stepik JavaScript courses Certificate**
+<a href = "https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.pdf">**Stepik JavaScript courses Certificate**</a>
 
 
 <img src = "https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.png?resolution=small" float = "left"></img>
@@ -71,15 +68,13 @@ function testCycle(n) {
 }
 ```
 
-
 ## Contacts and links
 ### Call\Viber\Telegram
-* <a href = "tel:+375296373666">+375 (29) 63 73 666 </a>*MTS* 
-* <a href = "tel:+375296313666">+375 (29) 63 13 666</a> *A1*
+* +375 29 63 73 666
+* +375 29 63 13 666
 ### Email
 aniskamaksim@gmail.com
 ### GitHub
 https://github.com/aniskamaksim
 ### Codewars
 https://www.codewars.com/users/aniskamaksim
-### Discorde
