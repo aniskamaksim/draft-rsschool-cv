@@ -19,6 +19,10 @@
         <p>I have my own business related to cargo transportation, which currently operates autonomously, without my participation.</p>
         <p>I am married and have a son, Matthew. This year he will be 2 years old.</p>
         <p>My goal is to move with my family from Belarus.</p>
+        <h2 id="languages">Languages</h2>
+        <p>Belorussian - native</p>
+        <p>Russian - native</p>
+        <p>English - B1 (Intermediate)</p>
         <h2 id="skills">Skills</h2>
         <p>I am well organized, structured, disciplined and motivated.</p>
         <p>I have good communication skills, I have a great desire to develop and learn new things.</p>
@@ -31,7 +35,7 @@
             <a href="https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.pdf"><strong>Stepik JavaScript courses Certificate</strong></a>
         </p>
         <p><img src="https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.png?resolution=small" alt="stepik js courses certificate" float="left"></p>
-        <p><strong>Examples of my code</strong></p>
+        <p><h2 id="examples-of-my-code">Examples of my code</h2></p>
         <pre><code><span class="hljs-meta">'use strict'</span>;
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">collectAllNumbersInInterval</span>(<span class="hljs-params">firstNumber, secondNumber</span>) </span>{
         <span class="hljs-keyword">let</span> result = <span class="hljs-string">" "</span>; <span class="hljs-comment">//result will contain the list of all numbers between the firstNumber and secondNumber</span>
@@ -49,21 +53,21 @@
         <span class="hljs-keyword">return</span> result;
     }
     </code></pre>
-        <pre><code><span class="hljs-meta">'use strict'</span>;
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">testCycle</span>(<span class="hljs-params">n</span>) </span>{
-  <span class="hljs-keyword">const</span> resheto = [];
-  <span class="hljs-keyword">const</span> num = [];
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &lt; n; i++) {
-    <span class="hljs-keyword">if</span>(!resheto[i]){
-    num.push(i);
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = i * <span class="hljs-number">2</span>; j &lt; n; j +=i) {
-    resheto[j] = <span class="hljs-literal">true</span>;
-    }
-    }
-    }
-    <span class="hljs-keyword">return</span> num.join(<span class="hljs-string">" "</span>);
-}
-</code></pre>
+    <pre><code><span class="hljs-meta">"use strict"</span>;
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stringOfPrimes</span>(<span class="hljs-params">givenNumber</span>) </span>{
+    <span class="hljs-keyword">const</span> sieveOfEratosthenes = [];
+    <span class="hljs-keyword">const</span> result = [];
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &lt; givenNumber; i++) {
+                <span class="hljs-keyword">if</span> (!sieveOfEratosthenes[i]) {
+                    result.push(i);
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = i * <span class="hljs-number">2</span>; j &lt; givenNumber; j += i) {
+                        sieveOfEratosthenes[j] = <span class="hljs-literal">true</span>;
+                    }
+                }
+            }
+            <span class="hljs-keyword">return</span> result.join(<span class="hljs-string">" "</span>);
+        }
+        </code></pre>
         <h2 id="contacts-and-links">Contacts and links</h2>
         <h3 id="call-viber-telegram">Call\Viber\Telegram</h3>
         <ul>
