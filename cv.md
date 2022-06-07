@@ -42,27 +42,38 @@ I have good communication skills, I have a great desire to develop and learn new
 
 **Examples of my code**
 ```
-function longest(s1, s2) {
-let x = s1.concat(s2).split('').sort();
- let yArray = x.filter(function(item, pos) {
-    return x.indexOf(item) == pos;
-})
-  return yArray.join('');
+'use strict';
+
+function collectAllNumbersInInterval(firstNumber, secondNumber) {
+    let result = " "; //result will contain the list of all numbers between the firstNumber and secondNumber
+    if (firstNumber > secondNumber) {
+        for (let i = firstNumber; i >= secondNumber; i--)
+            result += firstNumber-- + " ";
+        firstNumber--;
+    } else if (secondNumber > firstNumber) {
+        for (let i = secondNumber; i >= firstNumber; i--)
+            result += secondNumber-- + " ";
+        secondNumber--;
+    } else if (firstNumber === secondNumber) {
+        result = firstNumber;
+    }
+    return result;
 }
 ```
 
 ```
 'use strict';
+
 function testCycle(n) {
-  const resheto = [];
-  const num = [];
+    const resheto = [];
+    const num = [];
     for (let i = 2; i < n; i++) {
-    if(!resheto[i]){
-    num.push(i);
-    for (let j = i * 2; j < n; j +=i) {
-    resheto[j] = true;
-    }
-    }
+        if (!resheto[i]) {
+            num.push(i);
+            for (let j = i * 2; j < n; j += i) {
+                resheto[j] = true;
+            }
+        }
     }
     return num.join(" ");
 }
