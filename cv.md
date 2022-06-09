@@ -20,7 +20,7 @@ My goal is to move with my family from Belarus.
 
 ## Skills
 
-I am well organized, structured, disciplined and motivated. 
+I am well organized, structured, disciplined and motivated.
 
 I have good communication skills, I have a great desire to develop and learn new things.
 
@@ -31,13 +31,13 @@ I have good communication skills, I have a great desire to develop and learn new
 <a href = "https://www.efset.org/cert/reYjvv">**Certificate EF SET C1 Advanced**</a>
 
 
-<img src = "https://ibeton.by/wp-content/uploads/EFSET_MaksimAniska.png" href = "https://www.efset.org/cert/reYjvv" width = "330" height = "330" float = "left"></img>
+<img src = "https://ibeton.by/wp-content/uploads/EFSET_MaksimAniska.png" href = "https://www.efset.org/cert/reYjvv" width = "330" height = "330" float = "left">
 
 
 <a href = "https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.pdf">**Stepik JavaScript courses Certificate**</a>
 
 
-<img src = "https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.png?resolution=small" float = "left"></img>
+<img src = "https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.png?resolution=small" float = "left">
 
 
 **Examples of my code**
