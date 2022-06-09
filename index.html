@@ -8,81 +8,101 @@
         <title>cv</title>
     </head>
     <body>
-        <h1 id="maksim-aniska">Maksim Aniska</h1>
-        <p><img src="https://avatars.githubusercontent.com/u/106627293?v=4" width="240" height="240" alt="still young Maksim Aniska photo"></p>
-        <h2 id="some-facts-about-me">Some facts about me</h2>
-        <p>Born in 1982. I am 40 this year.</p>
-        <p>1999 - 2002 Studied at the Belarusian State University at the Faculty of Journalism (did not graduate)</p>
-        <p>2002 - 2003 Served in the army.</p>
-        <p>2006 - 2021 Worked and did business in the construction sector (concrete production) and in the field of cargo transportation.</p>
-        <p>I started as a foreman of the plant site, then became a sales manager, head of the sales department, the last position was the deputy director of the company.</p>
-        <p>I have my own business related to cargo transportation, which currently operates autonomously, without my participation.</p>
-        <p>I am married and have a son, Matthew. This year he will be 2 years old.</p>
-        <p>My goal is to move with my family from Belarus.</p>
-        <h2 id="languages">Languages</h2>
-        <p>Belorussian - native</p>
-        <p>Russian - native</p>
-        <p>English - B1 (Intermediate)</p>
-        <h2 id="skills">Skills</h2>
-        <p>I am well organized, structured, disciplined and motivated.</p>
-        <p>I have good communication skills, I have a great desire to develop and learn new things.</p>
-        <h2 id="languages">Languages</h2>
-        <p>Belorussian - native</p>
-        <p>Russian - native</p>
-        <p>English - B1 (Intermediate)</p>
-        <h2 id="achievements">Achievements</h2>
-        <p>
-            <a href="https://www.efset.org/cert/reYjvv"><strong>Certificate EF SET C1 Advanced</strong></a>
-        </p>
-        <p><img src="https://ibeton.by/wp-content/uploads/EFSET_MaksimAniska.png" href="https://www.efset.org/cert/reYjvv" width="330" height="330" alt="sertificate EF SET" float="left"></p>
-        <p>
-            <a href="https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.pdf"><strong>Stepik JavaScript courses Certificate</strong></a>
-        </p>
-        <p><img src="https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.png?resolution=small" alt="stepik js courses certificate" float="left"></p>
-        <p><h2 id="examples-of-my-code">Examples of my code</h2></p>
-        <pre><code><span class="hljs-meta">'use strict'</span>;
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">collectAllNumbersInInterval</span>(<span class="hljs-params">firstNumber, secondNumber</span>) </span>{
-        <span class="hljs-keyword">let</span> result = <span class="hljs-string">" "</span>; <span class="hljs-comment">//result will contain the list of all numbers between the firstNumber and secondNumber</span>
-        <span class="hljs-keyword">if</span> (firstNumber &gt; secondNumber) {
-            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = firstNumber; i &gt;= secondNumber; i--)
-                result += firstNumber-- + <span class="hljs-string">" "</span>;
-            firstNumber--;
-        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (secondNumber &gt; firstNumber) {
-            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = secondNumber; i &gt;= firstNumber; i--)
-                result += secondNumber-- + <span class="hljs-string">" "</span>;
-            secondNumber--;
-        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (firstNumber === secondNumber) {
-            result = firstNumber;
-        }
-        <span class="hljs-keyword">return</span> result;
-    }
-    </code></pre>
-    <pre><code><span class="hljs-meta">"use strict"</span>;
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stringOfPrimes</span>(<span class="hljs-params">givenNumber</span>) </span>{
-    <span class="hljs-keyword">const</span> sieveOfEratosthenes = [];
-    <span class="hljs-keyword">const</span> result = [];
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &lt; givenNumber; i++) {
-                <span class="hljs-keyword">if</span> (!sieveOfEratosthenes[i]) {
-                    result.push(i);
-                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = i * <span class="hljs-number">2</span>; j &lt; givenNumber; j += i) {
-                        sieveOfEratosthenes[j] = <span class="hljs-literal">true</span>;
+        <div class="main">
+        <div class="header">
+            <p><img src="https://avatars.githubusercontent.com/u/106627293?v=4" width="240" height="240" alt="still young Maksim Aniska photo"></p>
+            <h1 id="maksim-aniska">Maksim Aniska</h1>
+    </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-1-3"><h2 id="some-facts-about-me"><br><br><br><br><br><br>Some facts about me </div>
+                </h2></div>
+                <div class="col-2-3"><p>Born in 1982. I am 40 this year.</p>
+                    <p>1999 - 2002 Studied at the Belarusian State University at the Faculty of Journalism (did not graduate)</p>
+                    <p>2002 - 2003 Served in the army.</p>
+                    <p>2006 - 2021 Worked and did business in the construction sector (concrete production) and in the field of cargo transportation.</p>
+                    <p>I started as a foreman of the plant site, then became a sales manager, head of the sales department, the last position was the deputy director of the company.</p>
+                    <p>I have my own business related to cargo transportation, which currently operates autonomously, without my participation.</p>
+                    <p>I am married and have a son, Matthew. This year he will be 2 years old.</p>
+                    <p>My goal is to move with my family from Belarus.</p></div>
+              </div>
+              <div class="row">
+                <div class="col-1-3"> <h2 id="skills"><br>Skills</h2></div>
+                <div class="col-2-3"> <p>I am well organized, structured, disciplined and motivated.</p>
+                    <p>I have good communication skills, I have a great desire to develop and learn new things.</p></div>
+              </div>
+              <div class="row">
+                <div class="col-1-3"><h2 id="languages"><br>Languages</h2></div>
+                <div class="col-2-3">
+                    <p>Belorussian - native</p>
+                    <p>Russian - native</p>
+                    <p>English - B1 (Intermediate)</p></div>
+              </div>
+              <div class="row">
+                <div class="col-1-3"><h2 id="achievements">Achievements</h2></div>
+                <div class="col-2-3"> <p>
+                    <a href="https://www.efset.org/cert/reYjvv"><strong>Certificate EF SET C1 Advanced</strong></a>
+                </p>
+                <p><img src="https://ibeton.by/wp-content/uploads/EFSET_MaksimAniska.png" href="https://www.efset.org/cert/reYjvv" width="530" height="530" alt="sertificate EF SET" float="left"></p>
+                <p>
+                    <a href="https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.pdf"><strong>Stepik JavaScript courses Certificate</strong></a>
+                </p>
+                <p><img src="https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.png?resolution=small" alt="stepik js courses certificate" float="left"></p></div>
+              </div>
+              <div class="row">
+                <div class="col-1-3"><h2 id="examples-of-my-code">Examples of my code</h2></div>
+                <div class="col-2-3"><pre><code><span class="hljs-meta">'use strict'</span>;
+                    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">collectAllNumbersInInterval</span>(<span class="hljs-params">firstNumber, secondNumber</span>) </span>{
+                        <span class="hljs-keyword">let</span> result = <span class="hljs-string">" "</span>; <span class="hljs-comment"></span>
+                        <span class="hljs-keyword">if</span> (firstNumber &gt; secondNumber) {
+                            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = firstNumber; i &gt;= secondNumber; i--)
+                                result += firstNumber-- + <span class="hljs-string">" "</span>;
+                            firstNumber--;
+                        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (secondNumber &gt; firstNumber) {
+                            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = secondNumber; i &gt;= firstNumber; i--)
+                                result += secondNumber-- + <span class="hljs-string">" "</span>;
+                            secondNumber--;
+                        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (firstNumber === secondNumber) {
+                            result = firstNumber;
+                        }
+                        <span class="hljs-keyword">return</span> result;
                     }
-                }
-            }
-            <span class="hljs-keyword">return</span> result.join(<span class="hljs-string">" "</span>);
-        }
-        </code></pre>
-        <h2 id="contacts-and-links">Contacts and links</h2>
-        <h3 id="call-viber-telegram">Call\Viber\Telegram</h3>
-        <ul>
-            <li>+375 29 63 73 666</li>
-            <li>+375 29 63 13 666</li>
-        </ul>
-        <h3 id="email">Email</h3>
-        aniskamaksim@gmail.com
-        <h3 id="github">GitHub</h3>
-        <a href="https://github.com/aniskamaksim">https://github.com/aniskamaksim</a>
-        <h3 id="codewars">Codewars</h3>
-        <a href="https://www.codewars.com/users/aniskamaksim">https://www.codewars.com/users/aniskamaksim</a>
+                    </code></pre>
+                    <pre><code><span class="hljs-meta">"use strict"</span>;
+                    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stringOfPrimes</span>(<span class="hljs-params">givenNumber</span>) </span>{
+                    <span class="hljs-keyword">const</span> sieveOfEratosthenes = [];
+                    <span class="hljs-keyword">const</span> result = [];
+                        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &lt; givenNumber; i++) {
+                                <span class="hljs-keyword">if</span> (!sieveOfEratosthenes[i]) {
+                                    result.push(i);
+                                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = i * <span class="hljs-number">2</span>; j &lt; givenNumber; j += i) {
+                                        sieveOfEratosthenes[j] = <span class="hljs-literal">true</span>;
+                                    }
+                                }
+                            }
+                            <span class="hljs-keyword">return</span> result.join(<span class="hljs-string">" "</span>);
+                        }
+                        </code></pre></div>
+              </div>
+              <div class="row">
+                <div class="col-1-3"><h2 id="contacts-and-links"><br><br><br><br><br>Contacts and links</h2></div>
+                <div class="col-2-3"><h3 id="call-viber-telegram">Call\Viber\Telegram</h3>
+                    <ul>
+                        <li>+375 29 63 73 666</li>
+                        <li>+375 29 63 13 666</li>
+                    </ul>
+                    <h3 id="email">Email</h3>
+                    aniskamaksim@gmail.com
+                    <h3 id="github">GitHub</h3>
+                    <a href="https://github.com/aniskamaksim">https://github.com/aniskamaksim</a>
+                    <h3 id="codewars">Codewars</h3>
+                    <a href="https://www.codewars.com/users/aniskamaksim">https://www.codewars.com/users/aniskamaksim</a></div>
+              </div>
+            </div>
+        </div>
+.
     </body>
+    <div class="footer">
+        <h1><u>That's all, Folks!</u></h1>
+</div>
 </html>
