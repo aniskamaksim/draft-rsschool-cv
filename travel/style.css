@@ -1,230 +1,260 @@
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
-img {
-display: block;
-max-width: 100%;
-}
-h1,
 
+h1,
+h2,
 h3,
 ul,
 li,
 p {
-    padding: 5px;
-    margin: 5px;
+    padding: 0;
+    margin: 0;
 }
-body {
-margin: 0;
-font-family: 'Aleo';
-color: var(--primary-color);
-font-weight: 400;
-font-size: 22px;
-line-height: 1.2;
-text-align: justify;
-}
-:root {
---primary-color: #FFFFFF;
---secondary-color: #F2785C;
---third-color: #0D606F;
---content-width: 1200px;
---mobile-padding: 15px;
---gutter: 15px;
-}
-.wrapper-first{
-min-height: 100vh;
-background-image: url(/travel/img/bg_main_canada_mount_river_big.png);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-}
-.header{
-background: rgba(242, 120, 92, 0.7);
-box-shadow: 0 4px rgba(13, 96, 111, 0.5)
-}
-.container{
-padding: 0 15px;
-margin: 0 auto;
-}
-.row {
-display: flex;
-flex-wrap: wrap;
-/*margin: 0 calc(var(--gutter) * -1);*/
-}
-.header_wrapper{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-/* padding-top: 10px;
-padding-bottom: 10px; */
-}
-.header_info{
-display: flex;
-/* justify-content: space-between; */
-align-items: center;
-}
-.header_info_logo{
-margin-right: 6px;
-}
-.header_info_logo_img{
-width: 30px;
-height: 30px;
-}
-.header_info-title{
-font-family: "Magra";
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-/* line-height: 39px; */
-color: #FFFFFF;
-}
-.header_navigation{
-/* display: flex;
-flex-direction: row; */
-/* align-items: flex-start; */
-padding: 0px;
-/*gap: 42px;*/
-}
-.header_menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    list-style: none;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 0px;
-    /*gap: 42px;*/
-}
-.header_menu_list{
-list-style: none;
-color: #FFFFFF;
-margin-right: 42px;
-}
-.header_menu_link{
-    font-family: "Red Hat Text";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-.header_login_button_form{
-box-shadow: 0 4px rgba(13, 96, 111, 0.16);
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 10px;
 
-width: 103px;
-height: 41px;
-left: 1217px;
-top: 25px;
+img {
+    display: block;
+    max-width: 100%;
 }
-.first_button{
-display: inline-block;
-background-color: var(--third-color);
-color: var(--primary-color);
-font-family: "Red Hat Text";
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-text-align: center;
-text-decoration: none;
-border: 1px solid var(--third-color);
-padding: 10px;
-border-radius: 10px;
-}
-.preview{
-padding-top: 32px;
-padding-bottom: 221px
-}
-.preview_title{
-font-size: 80px;
-margin-bottom: 32px;
-}
-.preview_title_2{
-font-size: 20px;
-font-style: italic;
-margin-bottom: 46px;
-}
-.preview_form_wrapper{
-max-width: 892px;
-background-color: rgba(255, 255, 255, 0.7);
-border: none;
-border-radius: 16px;
-padding-top: 0px;
-padding-bottom: 0px;
-padding-left: 41px;
-padding-right: 18px;
-}
-.preview_form_info{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-.preview_form_field{
-min-width: 560px;
-background-color: transparent;
-border: none;
-}
-.preview_form_field::placeholder {
+
+body {
+    margin: 0;
+    font-family: 'Aleo';
+    color: var(--primary-color);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.2;
-    font-style: italic;
-    color: var(--secondary-color);
+    text-align: justify;
+    scroll-behavior: smooth;
 }
-.preview_search_form{
-font-family: "Red Hat Text";
-font-weight: 500;
-font-size: 24px;
-line-height: 1.3;
-border-radius: 10px;
-padding: 13px 32px;
+
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #F2785C;
+    --third-color: #0D606F;
+    --content-width: 1200px;
+    --mobile-padding: 15px;
+    --gutter: 15px;
 }
-steps{
-background-color: var(--primary-color);
-padding-top: 80px;
-padding-bottom: 72px;
-}
-.title_3steps{
-font-family: "Red Hat Text";
-font-weight: 500;
-font-size: 40px;
-line-height: 1.3;
-color: var(--secondary-color);
-text-align: center;
-margin-bottom: 40px;
-}
-.steps_row{
-padding: 0 12px;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-width: 1177px;
-height: 247px;
-left: 131px;
-top: 845px;
-}
-.steps_block{
-padding-left: 131px;
-}
-.steps_block_pic{
-    margin-bottom: 30px;
-}
-.steps_block-pic-main {
+
+/* ------------------components----------------- */
+.container {
+    max-width: calc(var(--content-width) + var(--mobile-padding) * 2);
+    padding: 0 15px;
     margin: 0 auto;
 }
-.steps_block_link {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--third-color);
+
+/* grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--gutter) * -1);
+
+}
+
+/* prime-btn */
+.prime-btn {
+    display: inline-block;
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    font-family: "Red Hat Text";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
     text-align: center;
     text-decoration: none;
+    border: 1px solid var(--third-color);
+    padding: 10px;
 }
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(229, 229, 229, .7);
+}
+
+.modal-content {
+    background-image: linear-gradient(180deg,
+            rgba(225, 225, 225, 1) 50%,
+            rgba(13, 96, 111, 0.5) 100%);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
+    color: var(--third-color);
+    font-size: 1.2em;
+    text-align: center;
+    margin: 15% auto;
+    border-radius: 10px;
+    width: 650px;
+}
+
+.modal-form {
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+}
+
+.modal-form_close {
+    color: var(--third-color);
+    font-size: 40px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.modal-form_close:hover {
+    color: var(--primary-button-color);
+    transform: rotate(360deg);
+    transition: 100ms;
+}
+
+.modal-form_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--third-text-color);
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 30px;
+}
+
+.modal-form_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 45px;
+}
+
+.modal-form_button {
+    background-color: #1877F2;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 0;
+    margin-bottom: 20px;
+}
+
+.modal-form_button-icon {
+    margin-right: 15px;
+}
+
+.modal-form_button-link {
+    font-family: "Red Hat Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+.modal-form_button_lite {
+    background-color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.modal-form_button-link_lite {
+    color: var(--third-color);
+}
+
+.modal-form_text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: rgba(13, 96, 111, 0.5);
+    margin-bottom: 10px;
+}
+
+.modal-form_text::before {
+    content: "";
+    background-color: rgba(13, 96, 111, 0.5);
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 261px;
+    margin-right: 9px;
+}
+
+.modal-form_text::after {
+    content: "";
+    background-color: rgba(13, 96, 111, 0.5);
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 261px;
+    margin-left: 9px;
+}
+
+.modal-form_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-form_input:last-of-type {
+    margin-bottom: 25px;
+}
+
+.modal-form_input-text {
+    font-size: 16px;
+    line-height: 1.2;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+.modal-form_input-box {
+    min-width: 560px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 19px 0;
+    outline: none;
+    border: none;
+}
+
+.modal-form_button_dark {
+    background-color: var(--third-color);
+    padding: 12px 0;
+    margin-bottom: 10px;
+}
+
+.modal-form_button-text {
+    font-family: "Red Hat Text";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border: none;
+}
+
+.modal-form_link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+    color: var(--third-color);
+    text-decoration: none;
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+    margin-bottom: 20px;
+}
+
+.modal-form_link:last-child {
+    border-bottom: 0;
+    padding-bottom: 23px;
+    margin-bottom: 0;
+}
+
+/* slider */
 .slide_viewer {
     position: relative;
     margin: 0 auto;
@@ -254,7 +284,7 @@ padding-left: 131px;
 
 .slide:nth-of-type(1) {
     position: relative;
-    background-image: url(/travel/img/slider/slider_rock_sea.png);
+    background-image: url(/img/slider/slider_rock_sea.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -273,7 +303,7 @@ padding-left: 131px;
 }
 
 .slide:nth-of-type(2) {
-    background-image: url(/travel/img/slider/slider_japan.png);
+    background-image: url(/img/slider/slider_japan.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -291,7 +321,7 @@ padding-left: 131px;
 }
 
 .slide:nth-of-type(3) {
-    background-image: url(/travel/img/slider/slider_golden_gate.png);
+    background-image: url(/img/slider/slider_golden_gate.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -327,326 +357,371 @@ a.slide_btn {
     color: rgba(242, 120, 92, 0.5);
     cursor: pointer;
 }
-.destinations{
-background-color: var(--primary-color);
-padding-top: 47px;
-padding-bottom: 40px;
+/* ----------------------------------------------- */
+/* ------------------wrapper-first---------------- */
+.wrapper-first {
+    min-height: 100vh;
+    background-image: url(/img/bg_main_canada_mount_river_big.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.destinations_title{
-font-family: "Red Hat Text";
-font-weight: 500;
-font-size: 40px;
-line-height: 1.3;
-color: var(--secondary-color);
-text-align: center;
-margin-bottom: 46px;
+/* ----------------------------------------------- */
+/* ------------------wrapper-second--------------- */
+.wrapper-second {
+    min-height: 100vh;
+    background-image: url(/img/stories/bg_river_boat_big.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.destinations_slider{
-margin-bottom: 84px;
+/* ----------------------------------------------- */
+/* ---------------------header-------------------- */
+.header {
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0 4px rgba(13, 96, 111, 0.5)
 }
-.destinations_more{
-display: flex;
-align-items: center;
-justify-content: center;
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 34px;
 }
-.destinations_button{
-padding-top: 13px;
-padding-bottom: 13px;
-padding-left: 33px;
-padding-right: 31px;
-border-radius: 10px;
+
+.header_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.destinations_button_pic{
-display: inline-block;
-margin-right: 13px;
+
+.header_info-logo {
+    margin-right: 6px;
 }
-.destinations_button_link{
-font-family: "Red Hat Text";
-font-weight: 500;
-font-size: 24px;
-line-height: 1.3;
-color: var(--primary-color);
-text-decoration: none;
+
+.header_info-pic {
+    width: 30px;
+    height: 30px;
 }
-.wrapper-second{
-min-height: 100vh;
-background-image: url(/travel/img/stories/bg_river_boat_big.png);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+
+.header_info-title {
+    font-family: "Magra";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
 }
-.stories{
-background-color: rgba(255, 255, 255, 0.7);
-padding-bottom: 41px;
+
+.header_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
-.stories_title{
-font-family: "Red Hat Text";
-font-weight: 500;
-font-size: 40px;
-line-height: 1.3;
-color: var(--secondary-color);
-background-color: var(--primary-color);
-text-align: center;
-padding: 40px 0;
+
+.header_item {
+    list-style: none;
+    color: var(--primary-text-color);
+    margin-right: 42px;
 }
+
+.header_item:last-child {
+    margin-right: 0;
+}
+
+.header_link {
+    font-family: "Red Hat Text";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.header_button-form {
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px rgba(13, 96, 111, 0.16);
+}
+/* ----------------------------------------------- */
+/* ---------------------preview------------------- */
+.preview {
+    padding-top: 32px;
+    padding-bottom: 221px;
+}
+
+.preview_title {
+    font-size: 80px;
+    margin-bottom: 32px;
+}
+
+.preview_subtitle {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 46px;
+}
+
+.preview_form-wrap {
+    max-width: 892px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 41px;
+    padding-right: 18px;
+}
+
+.preview_form-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.preview_form-field {
+    min-width: 560px;
+    background-color: transparent;
+    border: none;
+}
+
+.preview_form-field::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+.preview_form-submit {
+    font-family: "Red Hat Text";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    border-radius: 10px;
+    padding: 13px 32px;
+}
+/* ----------------------------------------------- */
+/* ----------------------steps-------------------- */
+.steps {
+    background-color: var(--primary-color);
+    padding-top: 80px;
+    padding-bottom: 72px;
+}
+.steps_title {
+        font-family: "Red Hat Text";
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.3;
+        color: var(--secondary-color);
+        text-align: center;
+        margin-bottom: 40px;
+}
+
+.steps_row {
+        padding: 0 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
+
+.steps_card:nth-child(2) {
+            padding-left: 68px;
+        }
+
+.steps_card-img {
+        margin-bottom: 30px;
+
+    }
+.steps_card-img-main {
+        margin: 0 auto;
+    }
+
+.steps_card-link {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.2;
+        color: var(--third-color);
+        text-align: center;
+        text-decoration: none;
+    }
+/* ----------------------------------------------- */
+/* ------------------destinations----------------- */
+.destinations {
+    background-color: var(--primary-color);
+    padding-top: 47px;
+    padding-bottom: 40px;
+}
+
+.destinations_title {
+    font-family: "Red Hat Text";
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.3;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.destinations_slider {
+    margin-bottom: 84px;
+}
+
+.destinations_more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destinations_button {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 33px;
+    padding-right: 31px;
+    border-radius: 10px;
+}
+
+.destinations_button-img {
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.destinations_button-link {
+    font-family: "Red Hat Text";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+/* ----------------------------------------------- */
+/* ---------------------stories------------------- */
+.stories {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 41px;
+}
+
+.stories_title {
+    font-family: "Red Hat Text";
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.3;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 40px 0;
+}
+
 .stories_row {
-padding-top: 40px;
-padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.stories_block{
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 30px;
-margin-left: 119px;
-margin-right: 120px;
+
+.stories_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
-.stories_block:last-child{
-margin-bottom: 0;
+
+.stories_card:last-child {
+    margin-bottom: 0;
 }
-.stories_block_pic{
-border-radius: 16px;
-margin-right: 40px;
+
+.stories_card-img {
+    border-radius: 16px;
+    margin-right: 40px;
 }
-.stories_block_info{
-align-self: start;
+
+.stories_card-info {
+    align-self: start;
 }
-.stories_block_title{
-font-weight: 400;
-font-size: 35px;
-line-height: 1.2;
-color: var(--third-color);
-margin-bottom: 24px;
+
+.stories_card-title {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.2;
+    color: var(--third-color);
+    margin-bottom: 24px;
 }
-.stories_block_text{
-font-weight: 700;
-font-size: 20px;
-line-height: 1.2;
-color: var(--third-color);
+
+.stories_card-desc {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--third-color);
 }
-.stories_block_link{
-font-weight: 700;
-font-size: 20px;
-line-height: 1.2;
-color: var(--third-color);
+
+.stories_card-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--third-color);
 }
-.stories_continue{
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 10px 32px;
-gap: 10px;
+
+.stories_more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.stories_button{
-padding-top: 13px;
-padding-bottom: 13px;
-padding-left: 33px;
-padding-right: 31px;
-border-radius: 10px;
+
+.stories_button {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 33px;
+    padding-right: 31px;
+    border-radius: 10px;
 }
-.stories_button_pic{
-display: inline-block;
-margin-right: 13px;
+
+.stories_button-img {
+    display: inline-block;
+    margin-right: 13px;
 }
-.stories_button_link{
-font-family: "Red Hat Text";
-font-weight: 500;
-font-size: 24px;
-line-height: 1.3;
-color: var(--primary-color);
-text-decoration: none;
+
+.stories_button-link {
+    font-family: "Red Hat Text";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    color: var(--primary-color);
+    text-decoration: none;
 }
+/* ----------------------------------------------- */
+/* ----------------------footer------------------- */
 .footer {
-padding-top: 21px;
-padding-bottom: 19px;
+    padding-top: 21px;
+    padding-bottom: 19px;
 }
-.third_wrapper{
-display: flex;
-justify-content: flex-end;
-align-items: center;
+
+.footer_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.footer_copyright{
-font-family: "Red Hat Text";
-font-weight: 500;
-font-size: 16px;
-line-height: 1.3;
-color: var(--primary-color);
-margin: 0 auto;
+
+.footer_copyright {
+    font-family: "Red Hat Text";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--primary-color);
+    margin: 0 auto;
 }
-.footer_socialmedia_list{
-display: flex;
-justify-content: space-between;
-align-items: center;
-list-style: none;
+
+.footer_social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
-.footer_socialmedia_item{
-list-style: none;
-color: var(--primary-text-color);
-margin-right: 24px;
+
+.footer_social-item {
+    list-style: none;
+    color: var(--primary-text-color);
+    margin-right: 0px;
 }
-.footer_socialmedia_item:last-child{
-margin-right: 0;
+
+.footer_social-item:last-child {
+    margin-right: 0px;
 }
-.modal {
-display: none;
-position: fixed;
-z-index: 3;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-overflow: auto;
-background-color: rgba(229, 229, 229, .7);
-}
-.modal-content {
-background-image: linear-gradient(180deg,
-    rgba(225, 225, 225, 1) 50%,
-    rgba(13, 96, 111, 0.5) 100%);
-background-size: cover, cover;
-background-repeat: no-repeat, no-repeat;
-background-position: center center;
-color: var(--third-color);
-font-size: 1.2em;
-text-align: center;
-margin: 15% auto;
-border-radius: 10px;
-width: 650px;
-}
-.modal-form {
-background-color: var(--secondary-bg-color);
-border-radius: 10px;
-}
-.modal-form_close {
-color: var(--third-color);
-font-size: 40px;
-cursor: pointer;
-float: right;
-font-weight: bold;
-padding-right: 15px;
-padding-top: 15px;
-}
-.modal-form_close:hover {
-color: var(--primary-button-color);
-transform: rotate(360deg);
-transition: 100ms;
-}
-.modal-form_title {
-font-weight: 700;
-font-size: 32px;
-line-height: 1.2;
-color: var(--third-text-color);
-text-align: center;
-padding-top: 25px;
-margin-bottom: 30px;
-}
-.modal-form_wrapper {
-display: flex;
-flex-direction: column;
-padding: 0 45px;
-}
-.modal-form_button {
-background-color: #1877F2;
-border: none;
-border-radius: 10px;
-padding: 13px 0;
-margin-bottom: 20px;
-}
-.modal-form_button-icon {
-margin-right: 15px;
-}
-.modal-form_button-link {
-font-family: "Red Hat Text";
-font-weight: 400;
-font-size: 20px;
-line-height: 1.3;
-color: var(--primary-color);
-text-decoration: none;
-text-align: center;
-}
-.modal-form_button_lite {
-background-color: var(--primary-color);
-margin-bottom: 30px;
-}
-.modal-form_button-link_lite {
-color: var(--third-color);
-}
-.modal-form_text {
-font-weight: 700;
-font-size: 20px;
-line-height: 1.2;
-color: rgba(13, 96, 111, 0.5);
-margin-bottom: 10px;
-}
-.modal-form_text::before {
-content: "";
-background-color: rgba(13, 96, 111, 0.5);
-display: inline-block;
-height: 1px;
-position: relative;
-vertical-align: middle;
-width: 261px;
-margin-right: 9px;
-}
-.modal-form_text::after {
-content: "";
-background-color: rgba(13, 96, 111, 0.5);
-display: inline-block;
-height: 1px;
-position: relative;
-vertical-align: middle;
-width: 261px;
-margin-left: 9px;
-}
-.modal-form_input {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-bottom: 20px;
-}
-.modal-form_input:last-of-type {
-margin-bottom: 25px;
-}
-.modal-form_input-text {
-font-size: 16px;
-line-height: 1.2;
-align-self: flex-start;
-margin-bottom: 5px;
-}
-.modal-form_input-box {
-min-width: 560px;
-background-color: var(--primary-color);
-border: none;
-border-radius: 10px;
-padding: 19px 0;
-outline: none;
-border: none;
-}
-.modal-form_button_dark {
-background-color: var(--third-color);
-padding: 12px 0;
-margin-bottom: 10px;
-}
-.modal-form_button-text {
-font-family: "Red Hat Text";
-font-weight: 400;
-font-size: 20px;
-line-height: 1.3;
-color: var(--primary-color);
-background-color: var(--third-color);
-border: none;
-}
-.modal-form_link {
-font-weight: 700;
-font-size: 15px;
-line-height: 1.2;
-color: var(--third-color);
-text-decoration: none;
-padding-bottom: 26px;
-border-bottom: 1px solid rgba(13, 96, 111, 0.5);
-margin-bottom: 20px;
-}
-.modal-form_link:last-child {
-border-bottom: 0;
-padding-bottom: 23px;
-margin-bottom: 0;
-}
+/* ----------------------------------------------- */
