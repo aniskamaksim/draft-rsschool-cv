@@ -22,6 +22,7 @@ h1 {
 font-family: FreeMono, monospace;
 }
 .col-1-3 {
+position: relative;
 width: 33.3333333333%;
 float: left;
 font-family: FreeMono, monospace;
@@ -32,6 +33,7 @@ align-items: center;
 justify-content: center;
 }
 .col-2-3 {
+position: relative;
   width: 66.6666666667%;
   float: left;
   font-family: 'Courier New', Courier, monospace;
