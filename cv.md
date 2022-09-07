@@ -39,7 +39,6 @@ I have good communication skills, I have a great desire to develop and learn new
 
 <img src = "https://stepik.org/certificate/756e53216330284945e45bdf3ec116229277adf0.png?resolution=small" float = "left">
 
-
 <a href = "https://app.rs.school/cv/2e161b32-1299-45e6-b7d1-fb887de0923d">**RS School Stage0 Certificate**</a>
 
 <img src = "https://ibeton.by/wp-content/uploads/RS_school_cerificate_stage0.png" float = "left" width = "630" height = "430">
