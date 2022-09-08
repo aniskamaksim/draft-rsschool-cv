@@ -47,3 +47,6 @@ position: relative;
   color: rgba(240, 39, 39, 0.771);
   text-align: center;
 }
+.bycenter {
+  margin-left: 400px;
+}
